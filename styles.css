@@ -10,6 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 
 /***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
+
 .slide {
   width: 100vw;
   height: 100vh;
@@ -20,7 +21,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   width: 400vw;
 }
 .one {
-  background: #efdefe;
+  background: #131022;
 }
 .two {
   background: #a3f3d3;
@@ -51,4 +52,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 h1 {
 	font-family: lores-15, sans-serif;
 	margin: 100px 0px 0px 50px;
+	color: white;
+}
+
+footer {
+	height: 35px;
+	width: 100%;
+	text-align: center;
+	padding: 30px 30px;
+	background-color: #58D298;
+	position: fixed;
+	bottom: 0;
 }
