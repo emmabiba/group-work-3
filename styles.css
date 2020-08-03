@@ -8,6 +8,71 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+	background: #131022;
+}
+
+/*************** NAVIGATION ****************/
+
+nav {
+	font-family: lores-12, sans-serif;
+	font-size: 25px;
+	color: white;
+	margin: 10px 100px 0 20px;
+	float: left;
+}
+
+div.slide nav{
+	margin: 40px 100px 0 20px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	margin: 10px 0;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #58D298;
+	text-decoration: underline;
+}
+
+nav a.active {
+	color: #58D298;
+	text-decoration: underline;
+}
+
+/*************** END NAVIGATION ****************/
+
+/******************** BODY *********************/
+
+main {
+	margin: 30px 0 0 0;
+}
+
+h1 {
+	font-family: lores-15, sans-serif;
+	margin: 0px 0px 20px 0px;
+	color: white;
+}
+
+div.slide h1 {
+	margin: 50px 0 0 0;
+}
+
+p {
+	font-family: Roboto, sans-serif;
+	color: white;
+}
+
+/***************** END BODY *********************/
 
 /***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
 
@@ -49,13 +114,13 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   position: absolute;
 }
 
-h1 {
-	font-family: lores-15, sans-serif;
-	margin: 100px 0px 0px 50px;
-	color: white;
-}
+/********** End Horizontal Scroll Code **************/
+
+/************** FOOTER **************/
 
 footer {
+	font-family: lores-12, sans-serif;
+	font-size: 20px;
 	height: 35px;
 	width: 100%;
 	text-align: center;
@@ -63,4 +128,27 @@ footer {
 	background-color: #58D298;
 	position: fixed;
 	bottom: 0;
+}
+
+footer p{
+	font-family: lores-12, sans-serif;
+	color: #131022;
+}
+
+footer ul li{
+	display: inline-flex;
+	margin: 0 30px;
+}
+
+footer a{
+	color: #131022;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+footer a.active{
+	text-decoration: underline;
 }
