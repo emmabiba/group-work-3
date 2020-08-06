@@ -30,6 +30,57 @@ body {
 
 /*************** NAVIGATION ****************/
 
+.logo-center {
+	max-width: 100%;
+	text-align: center;
+}
+
+.logo#logo-home {
+	margin: 10px 0 20px 0;
+}
+
+.logo {
+	margin: 0 0 20px 0;
+}
+
+.logo-center:hover {
+	/* Switches to red logo on hover */
+	content: url('images/logo-red-center.png');
+}
+
+#logo-home:hover {
+	/* Switches to red logo on hover */
+		content: url('images/logo-red.png');
+}
+
+/*logo shake animation */
+
+
+
+img.rawr:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* end shake animation */
+
 nav {
 	font-family: lores-12, sans-serif;
 	font-size: 25px;
@@ -351,6 +402,25 @@ footer a.active{
 /************** END FOOTER **************/
 
 /************* MEDIA QUERIES ****************/
+
+@media (max-width: 999px){
+	.logo{
+		display: none;
+	}
+}
+
+@media (min-width: 1000px){
+	.logo{
+		max-width: 250px;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1000px){
+	.logo-center{
+		display: none;
+	}
+}
 
 @media (max-width: 700px){
 	#game p{
