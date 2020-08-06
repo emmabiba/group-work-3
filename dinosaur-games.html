@@ -17,29 +17,44 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 
-		<header>
-			<nav>
-				<ul>
-					<li><a href="index.html">Jurassic Encounters</a></li>
-					<li><a href="characters.html">Movie Characters</a></li>
-					<li><a href="dinosaur-games.html" class="active">Dino Game</a></li>
-				</ul>
-			</nav>
-		</header>
+		<div class="flex-grid">
 
-		<main>
+			<header class="col sidebar">
+				<nav>
+					<ul>
+						<li><a href="index.html">Jurassic Encounters</a></li>
+						<li><a href="characters.html">Movie Characters</a></li>
+						<li><a href="dinosaur-games.html" class="active">Dino Game</a></li>
+					</ul>
+				</nav>
+			</header>
 
-			<!-- Link for dinosaur game: https://codepen.io/sean_codes/pen/XRmryR -->
+			<main class="col main" id="game">
+				<h1>Dino Game</h1>
+				<p>"You did it. You crazy son of a bitch, you did it." - Ian Malcolm</p>
+					<div class="game">
+	  				<canvas tabIndex="1"></canvas>
+	  				<div class="score">SC: <span class="points">0</span></div>
+	  				<div class="hiscore">HI: <span class="hipoints">0</span></div>
+	  				<div class="playagain">Click or Press a Key!</div>
+					</div>
+
+				<!-- Link for dinosaur game: https://codepen.io/sean_codes/pen/XRmryR -->
 
 		</main>
 
+		</div>
+
 		<footer>
+
 			<p>For more Dino Games visit: <a href="#" target="_blank">Link Title</a></p>
 		</footer>
+		<script src="js/game.js"></script>
 
 	</body>
 

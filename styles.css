@@ -12,18 +12,32 @@ body {
 	background: #131022;
 }
 
+/******************** FLEX-GRID *********************/
+
+.flex-grid {
+	display: flex;
+}
+
+.sidebar {
+	flex: 1;
+}
+
+.main {
+	flex: 2;
+}
+
 /*************** NAVIGATION ****************/
 
 nav {
 	font-family: lores-12, sans-serif;
 	font-size: 25px;
 	color: white;
-	margin: 10px 100px 0 20px;
-	float: left;
+	margin: 40px 100px 0 40px;
+/*	float: left; */
 }
 
 div.slide nav{
-	margin: 40px 100px 0 20px;
+	margin: 0px 100px 0 40px;
 }
 
 nav ul{
@@ -49,6 +63,10 @@ nav a.active {
 	text-decoration: underline;
 }
 
+header#nav-home {
+	width: 35vw;
+}
+
 /*************** END NAVIGATION ****************/
 
 /******************** BODY *********************/
@@ -57,22 +75,41 @@ main {
 	margin: 30px 0 0 0;
 }
 
+main#home {
+	margin: 0 0 0 0;
+}
+
 h1 {
 	font-family: lores-15, sans-serif;
+	font-size: 40px;
 	margin: 0px 0px 20px 0px;
 	color: white;
 }
 
 div.slide h1 {
-	margin: 50px 0 0 0;
+/* 	margin: 40px 0 0 0; */
+}
+
+div.slide {
+	padding: 40px 0 0 0;
 }
 
 p {
-	font-family: Roboto, sans-serif;
+	font-family: lores-12, sans-serif;
+	font-size: 1.1rem;
 	color: white;
 }
 
 /***************** END BODY *********************/
+
+/***************** HOME SLIDE ONE ***************/
+
+div.s1content {
+	text-align: center;
+	justify-content: center;
+}
+
+/***************** END HOME SLIDE ONE ***************/
 
 /***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
 
@@ -83,7 +120,7 @@ p {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+	width: 400vw;
 }
 .one {
   background: #131022;
@@ -116,12 +153,84 @@ p {
 
 /********** End Horizontal Scroll Code **************/
 
+/********** Fix Display of Slides from Flex-Grid **************/
+
+main#home {
+	display: inline-flex;
+}
+
+/* dino game */
+
+#game{
+/*   padding-top: 11%; */
+   font-family: lores-12, sans-serif;
+   font-size: 1rem;
+   color: #58D298;
+	 text-align: center;
+}
+
+#game p{
+		font-family: lores-12, sans-serif;
+		font-size: 1.1rem;
+   	text-align: center;
+		padding-bottom: 20px;
+}
+
+main#game {
+	margin: 40px 5% 0 0;
+}
+
+.game{
+   position: relative;
+   max-width: 95%;
+   margin: 10px auto;
+	 border: 2px solid #58D298;
+}
+.score,.hiscore{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+}
+
+.points,.hipoints{
+   min-width: 30px;
+   text-align: right;
+   display: inline-block;
+}
+.hiscore{
+   top: 30px;
+}
+.playagain{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%) translateY(-50%);
+/*   color: white; */
+	 color: #58D298;
+   padding: 10px 20px;
+/*   border: 2px solid #FFF; */
+	 border: 2px solid #58D298;
+   pointer-events: none;
+   transition: 1s all;
+}
+
+canvas{
+/*   background: rgba(0,0,0, 0.55); */
+	 background-color: #131022;
+	 display: block;
+   height: 100%;
+   width: 100%;
+/*   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
+   border-radius: 2px;
+   image-rendering: pixelated;
+}
+
 /************** FOOTER **************/
 
 footer {
 	font-family: lores-12, sans-serif;
 	font-size: 20px;
-	height: 35px;
+	height: 25px;
 	width: 100%;
 	text-align: center;
 	padding: 30px 30px;
@@ -151,4 +260,15 @@ footer a:hover{
 
 footer a.active{
 	text-decoration: underline;
+}
+
+/************* MEDIA QUERIES ****************/
+
+@media (max-width: 700px){
+	#game p{
+			margin-top: 15%;
+			font-family: lores-12, sans-serif;
+			font-size: 1rem;
+	   	text-align: center;
+			padding-bottom: 3%;
 }
