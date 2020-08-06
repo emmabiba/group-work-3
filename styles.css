@@ -261,26 +261,56 @@ div#scroll-animation {
   flex-direction: row;
 	width: 800vw;
 }
-.one {
+
+.wrapper-characters {
+  display: flex;
+  flex-direction: row;
+	width: 1000vw;
+}
+
+.one#dinosaur-paddock-scroll {
   background: #131022;
 	background-image: url("images/home-background.png");
 	background-repeat: no-repeat;
   background-position: center bottom;
 	background-size: 85vw auto;
 }
+
 .two {
-  background: #a3f3d3;
-	1
+  background: grey;
 }
 .three {
-  background: #0bbaa0;
+  background: #131022;
 }
 .four {
-  background: #00dfdf;
+  background: grey;
+}
+.five {
+	background: #131022
+}
+.six {
+	background: grey;
+}
+.seven {
+	background: #131022
+}
+.eight {
+	background: grey;
+}
+.nine {
+	background: #131022
+}
+.ten {
+	background: grey;
 }
 
 .wrapper {
   transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.wrapper-characters {
+	transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 
@@ -294,7 +324,67 @@ div#scroll-animation {
   position: absolute;
 }
 
+.outer-wrapper-characters {
+	width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+
+
 /********** End Horizontal Scroll Code **************/
+
+/************* CHARACTERS PAGE *************/
+
+.wrapper#characters {
+  display: flex;
+  flex-direction: row;
+	width: 1000vw;
+}
+
+header#nav-characters {
+	width: 35vw;
+}
+
+.one#slide-characters {
+	background-image: none;
+}
+
+main#main-characters {
+	display: inline-flex;
+}
+
+#characters{
+	max-width: 90%;
+	margin-bottom: 5%;
+}
+
+#characters h1{
+	font-size: 3em;
+	margin-left: 7%;
+}
+#characters p{
+	font-size: 1.7em;
+	max-width: 50%;
+	font-family: lores-12, sans-serif;
+	padding-bottom: 3%;
+}
+
+#characters img{
+	margin-left: 7%;
+	max-width: 20%;
+	padding: 0 2% 2% 0;
+}
+
+article{
+	display: flex;
+}
+
+/************ END CHARACTERS PAGE ***********/
 
 /******************* DINO GAME **********************/
 
@@ -369,16 +459,19 @@ canvas{
 footer {
 	font-family: lores-12, sans-serif;
 	font-size: 20px;
-	height: 25px;
 	width: 100%;
 	text-align: center;
-	padding: 30px 30px;
 	background-color: #58D298;
 	position: fixed;
 	bottom: 0;
 }
 
+footer div.sub-nav {
+	padding: 30px 0;
+}
+
 footer p{
+	padding: 30px 0;
 	font-size: 20px;
 	color: #131022;
 }
