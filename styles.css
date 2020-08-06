@@ -132,7 +132,14 @@ main#home {
 
 h1 {
 	font-family: lores-15, sans-serif;
-	font-size: 40px;
+	font-size: 60px;
+	margin: 0px 0px 20px 0px;
+	color: white;
+}
+
+h2 {
+	font-family: lores-15, sans-serif;
+	font-size: 50px;
 	margin: 0px 0px 20px 0px;
 	color: white;
 }
