@@ -277,9 +277,25 @@ div#scroll-animation {
 	flex-direction: column;
 }
 
-img.dino-image {
+img#brontosaurus {
+	width: 80%;
+}
+img#velociraptor {
 	width: 35%;
 }
+img#triceratops {
+	width: 35%;
+}
+img#allosaurus {
+	width: 60%;
+}
+img#baryonyx {
+	width: 55%;
+}
+img#tyrannosaurus {
+	width: 70%;
+}
+
 
 div.dino-info {
 	width: 45vw;
@@ -295,8 +311,10 @@ div.dino-position {
  	flex-direction: column;
  	align-items: flex-end;
  	justify-content: flex-end;
-	margin: 0 50px 90px 0;
+	margin: 0 50px 80px 0;
 }
+
+/******************* END DINO INFO SLIDES **********************/
 
 /***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
 
