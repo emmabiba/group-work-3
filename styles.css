@@ -257,16 +257,61 @@ div#scroll-animation {
 
 /***************** END HOME SLIDE ONE ***************/
 
+/***************** DINO INFO SLIDES *****************/
+
+/*img.dino-image {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 5%;
+} */
+
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+	display: flex;
+	flex-direction: column;
+}
+
+img.dino-image {
+	width: 35%;
+}
+
+div.dino-info {
+	width: 45vw;
+	margin: 50px 0 0 5%;
+	border-style: solid;
+	border: 3px solid #58D298;
+	padding: 2%;
+}
+
+div.dino-position {
+	height: 100vw;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: flex-end;
+ 	justify-content: flex-end;
+	margin: 0 50px 90px 0;
+}
+
 /***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
 
 .slide {
   width: 100vw;
   height: 100vh;
 }
+.slide-dino {
+	width: 85vw;
+	height: 100vh;
+}
 .wrapper {
   display: flex;
   flex-direction: row;
-	width: 800vw;
+	width: 700vw;
 }
 
 .wrapper-characters {
@@ -390,7 +435,7 @@ main#main-characters {
 	max-width: 45%;
 	border-style: solid;
 	border: 5px solid #58D298;
-	padding: 4%;
+	padding: 2%;
 }
 article{
 	display: flex;
