@@ -358,7 +358,11 @@ header#nav-characters {
 }
 
 .one#slide-characters {
-	background-image: none;
+	background: #131022;
+	background-image: url("images/characters-background.png");
+	background-repeat: no-repeat;
+  background-position: center bottom;
+	background-size: 85vw auto;
 }
 
 main#main-characters {
@@ -469,13 +473,17 @@ footer {
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
-	background-color: #58D298;
 	position: fixed;
 	bottom: 0;
 }
 
 footer div.sub-nav {
 	padding: 30px 0;
+	background-color: #58D298;
+}
+
+footer div.thanks-for-playing {
+	background-color: #58D298;
 }
 
 footer p{
