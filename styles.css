@@ -365,28 +365,29 @@ main#main-characters {
 	display: inline-flex;
 }
 
-#characters{
-	max-width: 90%;
-	margin-bottom: 5%;
+.quote{
+	font-weight: bold;
+}
+.person{
+	padding: 8%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 8%;
 }
 
-#characters h1{
-	font-size: 3em;
-	margin-left: 7%;
-}
-#characters p{
-	font-size: 1.7em;
-	max-width: 50%;
-	font-family: lores-12, sans-serif;
+.person p{
 	padding-bottom: 3%;
 }
 
-#characters img{
-	margin-left: 7%;
-	max-width: 20%;
-	padding: 0 2% 2% 0;
+.person img{
+	max-width: 100%;
 }
-
+.copy{
+	max-width: 45%;
+	border-style: solid;
+	border: 5px solid #58D298;
+	padding: 4%;
+}
 article{
 	display: flex;
 }
