@@ -284,31 +284,31 @@ div#scroll-animation {
 }
 
 .two {
-  background: grey;
+  background: #131022;
 }
 .three {
   background: #131022;
 }
 .four {
-  background: grey;
+  background: #131022;
 }
 .five {
 	background: #131022
 }
 .six {
-	background: grey;
+	background: #131022;
 }
 .seven {
 	background: #131022
 }
 .eight {
-	background: grey;
+	background: #131022;
 }
 .nine {
 	background: #131022
 }
 .ten {
-	background: grey;
+	background: #131022;
 }
 
 .wrapper {
@@ -475,6 +475,10 @@ footer {
 	text-align: center;
 	position: fixed;
 	bottom: 0;
+}
+
+footer img.jeep{
+	width: 22vw
 }
 
 footer div.sub-nav {
