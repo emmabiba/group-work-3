@@ -266,7 +266,24 @@ div#scroll-animation {
 	width: 5%;
 } */
 
-.two,
+.two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.two div.dino-info {
+	width: 45vw;
+	margin: 50px 0 150px 0;
+	border-style: solid;
+	border: 3px solid #58D298;
+	padding: 2%;
+}
+
+div.dino-info p{
+	margin-bottom: 10px;
+}
+
 .three,
 .four,
 .five,
@@ -277,22 +294,22 @@ div#scroll-animation {
 	flex-direction: column;
 }
 
-img#brontosaurus {
+img.brontosaurus {
 	width: 80%;
 }
-img#velociraptor {
+img.velociraptor {
 	width: 35%;
 }
-img#triceratops {
+img.triceratops {
 	width: 35%;
 }
-img#allosaurus {
+img.allosaurus {
 	width: 60%;
 }
-img#baryonyx {
+img.baryonyx {
 	width: 55%;
 }
-img#tyrannosaurus {
+img.tyrannosaurus {
 	width: 70%;
 }
 
@@ -404,8 +421,6 @@ div.dino-position {
   position: absolute;
 }
 
-
-
 /********** End Horizontal Scroll Code **************/
 
 /************* CHARACTERS PAGE *************/
@@ -452,11 +467,18 @@ main#main-characters {
 .copy{
 	max-width: 45%;
 	border-style: solid;
-	border: 5px solid #58D298;
+	border: 3px solid #58D298;
 	padding: 2%;
 }
 article{
 	display: flex;
+	margin-bottom: 200px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /************ END CHARACTERS PAGE ***********/
