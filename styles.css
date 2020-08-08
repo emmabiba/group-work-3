@@ -10,6 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	background: #131022;
+	overflow-y: hidden;
 }
 
 /******************** FLEX-GRID *********************/
@@ -50,7 +51,7 @@ body {
 
 #logo-home:hover {
 	/* Switches to red logo on hover */
-		content: url('images/logo-red.png');
+		content: url("images/logo-red.png");
 }
 
 /*logo shake animation */

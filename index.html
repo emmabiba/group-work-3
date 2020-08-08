@@ -32,9 +32,9 @@
 
 						<header class="col sidebar" id="nav-home">
 							<nav>
-								<a href="index.html">
-									<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home" />
-									<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr" />
+								<a href="index.html" onmouseenter="playAudio()">
+									<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home"/>
+									<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr"/>
 								</a>
 								<ul>
 									<li><a href="index.html" class="active">Dinosaur Paddocks</a></li>
@@ -146,6 +146,14 @@
 				</ul>
 			</div>
 		</footer>
+
+		<!-- https://codepen.io/codeaaron/pen/bBpZdx -->
+
+		<audio id="audioID">
+			<source src="audio/trex-rawr.mp3" type="audio/mpeg"></source>
+			<source src="audio/trex-rawr.ogg" type="audio/ogg"></source>
+			Your browser does not support the audio element.
+		</audio>
 
 		<script src="js/main.js"></script>
 
