@@ -132,14 +132,14 @@ main#home {
 
 h1 {
 	font-family: lores-15, sans-serif;
-	font-size: 60px;
+	font-size: 3rem;
 	margin: 0px 0px 20px 0px;
 	color: white;
 }
 
 h2 {
 	font-family: lores-15, sans-serif;
-	font-size: 50px;
+	font-size: 2rem;
 	margin: 0px 0px 20px 0px;
 	color: white;
 }
@@ -154,7 +154,7 @@ div.slide {
 
 p {
 	font-family: lores-12, sans-serif;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: white;
 }
 
@@ -171,7 +171,7 @@ main#home {
 }
 
 p#scroll {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 i#east {
@@ -182,12 +182,11 @@ i#east {
 }
 
 div.s1content p {
-	display: inline;
-	margin: 0 1%;
+	display: block;
 }
 
 div.vertical-center {
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: flex-end;
 }
@@ -270,14 +269,12 @@ div#scroll-animation {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: 2%;
 }
 
 .two div.dino-info {
-	width: 45vw;
-	margin: 50px 0 150px 0;
-	border-style: solid;
-	border: 3px solid #58D298;
-	padding: 2%;
+	width: 70vw;
+	margin: 50px 0px 50px 0;
 }
 
 div.dino-info p{
@@ -313,17 +310,13 @@ img.tyrannosaurus {
 	width: 70%;
 }
 
-
 div.dino-info {
-	width: 45vw;
-	margin: 50px 0 0 5%;
-	border-style: solid;
-	border: 3px solid #58D298;
-	padding: 2%;
+	width: 100vw;
+	margin: 30px 0 0 0%;
 }
 
 div.dino-position {
-	height: 100vw;
+	height: 100vh;
  	display: flex;
  	flex-direction: column;
  	align-items: flex-end;
@@ -563,7 +556,8 @@ footer {
 }
 
 footer img.jeep{
-	width: 22vw
+	width: 22vw;
+	visibility: hidden;
 }
 
 footer div.sub-nav {
@@ -602,6 +596,119 @@ footer a.active{
 /************** END FOOTER **************/
 
 /************* MEDIA QUERIES ****************/
+
+@media (min-width: 410px){
+	h1 {
+		font-size: 3.75rem;
+	}
+
+	p {
+		font-family: lores-12, sans-serif;
+		font-size: 1.1rem;
+		color: white;
+	}
+
+	footer img.jeep{
+		visibility: visible;
+	}
+
+	img.brontosaurus {
+		width: 80%;
+	}
+	img.velociraptor {
+		width: 35%;
+	}
+	img.triceratops {
+		width: 35%;
+	}
+	img.allosaurus {
+		width: 60%;
+	}
+	img.baryonyx {
+		width: 55%;
+	}
+	img.tyrannosaurus {
+		width: 70%;
+	}
+}
+
+@media (min-width: 700px){
+
+	h2 {
+		font-size: 3.125rem;
+	}
+
+	p#scroll {
+		font-size: 1.5rem;
+	}
+
+	i#east {
+	  position: relative;
+	  /* Adjust these values accordingly */
+	  top: 5px;
+	  left: 5px;
+	}
+
+	div.s1content p {
+		display: inline;
+		margin: 0 1%;
+	}
+
+	div.vertical-center {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.two div.dino-info {
+		width: 45vw;
+		margin: 50px 0 150px 0;
+		border-style: solid;
+		border: 3px solid #58D298;
+		padding: 2%;
+	}
+
+	div.dino-info {
+		width: 45vw;
+		margin: 7% 0 0 7%;
+		border-style: solid;
+		border: 3px solid #58D298;
+		padding: 2%;
+	}
+}
+
+@media (max-width: 1070px){
+	div.sub-nav {
+		display: none;
+	}
+
+	div.dino-position {
+		margin: 0 50px 0px 0;
+	}
+
+	div.dino-info {
+		width: 70vw;
+	}
+
+	img.brontosaurus {
+		width: 95%;
+	}
+	img.velociraptor {
+		width: 95%;
+	}
+	img.triceratops {
+		width: 95%;
+	}
+	img.allosaurus {
+		width: 90%;
+	}
+	img.baryonyx {
+		width: 95%;
+	}
+	img.tyrannosaurus {
+		width: 90%;
+	}
+}
 
 @media (max-width: 999px){
 	.logo{
