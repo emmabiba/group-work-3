@@ -10,12 +10,18 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	background: #131022;
+}
+body .overflow{
 	overflow-y: hidden;
 }
 
 /******************** FLEX-GRID *********************/
 
 .flex-grid {
+	display: flex;
+}
+
+.flex-grid-game {
 	display: flex;
 }
 
@@ -32,12 +38,12 @@ body {
 /*************** NAVIGATION ****************/
 
 .logo-center {
-	max-width: 100%;
+	max-width: 250px;
 	text-align: center;
 }
 
 .logo#logo-home {
-	margin: 10px 0 20px 0;
+	margin: 10px 0 20px 40px;
 }
 
 .logo {
@@ -119,6 +125,10 @@ header#nav-home {
 	width: 35vw;
 }
 
+.mobile-menu nav {
+	display: inline;
+}
+
 /*************** END NAVIGATION ****************/
 
 /******************** BODY *********************/
@@ -165,6 +175,12 @@ p {
 
 div.s1content {
 	text-align: center;
+	justify-content: center;
+}
+
+div.s1content nav {
+	justify-content: center;
+	align-self: center;
 }
 
 main#home {
@@ -333,6 +349,10 @@ div.dino-position {
   width: 100vw;
   height: 100vh;
 }
+.slide-characters {
+	width: 100vw;
+	height: 100vh;
+}
 .slide-dino {
 	width: 85vw;
 	height: 100vh;
@@ -359,6 +379,9 @@ div.dino-position {
 
 .two {
   background: #131022;
+}
+.two-characters {
+	background: #131022;
 }
 .three {
   background: #131022;
@@ -419,6 +442,11 @@ div.dino-position {
 
 /************* CHARACTERS PAGE *************/
 
+.two-two {
+	display: block;
+	justify-content: flex-start;
+}
+
 .wrapper#characters {
   display: flex;
   flex-direction: row;
@@ -445,34 +473,28 @@ main#main-characters {
 	font-weight: bold;
 }
 .person{
-	padding: 8%;
+	margin: 2%;
 	display: flex;
-	justify-content: space-around;
-	margin-top: 8%;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100%;
 }
 
 .person p{
 	padding-bottom: 3%;
+	max-width: 100%;
 }
 
 .person img{
-	max-width: 100%;
+	max-width: 250px;
+	padding-top: 6%
 }
 .copy{
-	max-width: 45%;
-	border-style: solid;
-	border: 3px solid #58D298;
-	padding: 2%;
+	max-width: 100%;
+	margin: 6%;
 }
 article{
 	display: flex;
-	margin-bottom: 200px;
-}
-
-.about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 /************ END CHARACTERS PAGE ***********/
@@ -598,6 +620,22 @@ footer a.active{
 
 /************* MEDIA QUERIES ****************/
 
+@media (max-width: 400px) {
+
+	.person{
+		padding: 3%;
+		flex-wrap: wrap;
+	}
+
+	.person section img{
+		max-width: 150px;
+	}
+
+	.person p{
+		font-size: 12px;
+	}
+}
+
 @media (min-width: 410px){
 	h1 {
 		font-size: 3.75rem;
@@ -630,6 +668,27 @@ footer a.active{
 	}
 	img.tyrannosaurus {
 		width: 70%;
+	}
+
+	.person{
+		padding: 2%;
+		justify-content: space-around;
+		min-width: 400px;
+	}
+
+	.person p{
+		padding-bottom: 3%;
+	}
+
+	.person img{
+		max-width: 100%;
+		padding-top: 2%
+	}
+
+	article{
+		display: flex;
+		align-items: center;
+		margin-bottom: 200px;
 	}
 }
 
@@ -676,10 +735,17 @@ footer a.active{
 		border: 3px solid #58D298;
 		padding: 2%;
 	}
+
 }
 
 @media (max-width: 1070px){
+
+
 	div.sub-nav {
+		display: none;
+	}
+
+	div.thanks-for-playing {
 		display: none;
 	}
 
@@ -715,12 +781,47 @@ footer a.active{
 	.logo{
 		display: none;
 	}
+
+	.desktop-menu {
+		display: none;
+	}
+
+	.mobile-menu-wrapper {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.flex-grid-game {
+		flex-direction: column;
+	}
+
+	main#game {
+    margin: 40px 0% 0 0;
+}
+
+nav {
+    margin: 40px 0px 0 0px;
+}
 }
 
 @media (min-width: 1000px){
 	.logo{
 		max-width: 250px;
 		text-align: left;
+	}
+	.mobile-menu {
+		display: none;
+	}
+	nav.mobile-menu {
+		display: none;
+	}
+
+	.copy{
+		max-width: 45%;
+		border-style: solid;
+		border: 3px solid #58D298;
+		padding: 2%;
+		min-width: 400px;
 	}
 }
 

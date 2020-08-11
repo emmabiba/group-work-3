@@ -21,7 +21,7 @@
 
 	</head>
 
-	<body>
+	<body class="overflow">
 
 		<div class="outer-wrapper-characters">
   		<div class="wrapper-characters">
@@ -31,23 +31,46 @@
 					<div class="flex-grid">
 
 						<header class="col sidebar" id="nav-home">
-							<nav>
-								<a href="index.html">
-									<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home" />
-									<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr" />
+
+							<div class="desktop-menu">
+
+								<a href="index.html" onmouseenter="playAudio()">
+									<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home"/>
 								</a>
-								<ul>
-									<li><a href="index.html">Dinosaur Paddocks</a></li>
-									<li><a href="characters.html"  class="active">Movie Characters</a></li>
-									<li><a href="dinosaur-games.html">Dino Game</a></li>
-								</ul>
-							</nav>
+
+								<nav>
+									<ul>
+										<a href="index.html"><li>Dinosaur Paddocks</li></a>
+										<a href="characters.html" class="active"><li>Movie Characters</li></a>
+										<a href="dinosaur-games.html"><li>Dino Game</li></a>
+									</ul>
+								</nav>
+
+							</div>
+
 						</header>
 
 					</div>
 
 					<!-- <div class="col main"> -->
 					<div class="s1content">
+
+						<a href="index.html" onmouseenter="playAudio()">
+							<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr"/>
+						</a>
+
+						<div class="mobile-menu">
+
+							<nav>
+								<ul>
+									<a href="index.html"><li>Dinosaur Paddocks</li></a>
+									<a href="characters.html"  class="active"><li>Movie Characters</li></a>
+									<a href="dinosaur-games.html"><li>Dino Game</li></a>
+								</ul>
+							</nav>
+
+						</div>
+
 						<h1>Movie Characters</h1>
 						<div class="vertical-center" id="scroll-animation">
 							<p id="scroll">Scroll to meet the movie characters!</p><p><i class="material-icons" id="east">east</i></p>
@@ -59,7 +82,7 @@
 
 				<main id="home">
 
-			    <div class="slide two about" id="alan">
+			    <div class="slide-characters two-characters about" id="alan">
 						<article class="person">
 							<section class="copy">
 							<h2>Dr. Alan Grant</h2>
@@ -75,7 +98,7 @@
 						</article>
 					</div>
 
-			    <div class="slide three about" id="ellie">
+			    <div class="slide-characters three about" id="ellie">
 						<article class="person">
 						<section class="copy">
 						<h2>Dr. Ellen Degler</h2>
@@ -91,7 +114,7 @@
 						</article>
 					</div>
 
-			    <div class="slide four about" id="malcolm">
+			    <div class="slide-characters four about" id="malcolm">
 						<article class="person">
 						<section class="copy">
 						<h2>Dr. Ian Malcolm</h2>
@@ -107,23 +130,23 @@
 						</article>
 					</div>
 
-					<div class="slide five about" id="hammond">
+					<div class="slide-characters five about" id="hammond">
 						<article class="person">
-						<section class="copy">
-						<h2>Dr. John Alfred Hammond</h2>
-							<p>Dr. John Alfred  Hammond, or John Parker Hammond (Trespasser canon), was the CEO and creator of Jurassic Park. He founded the company InGen and the Hammond Foundation. He had at least one daughter, two grandchildren (Tim and Lex Murphy), a sister (as Hammond's nephew has the surname of Ludlow, not Hammond) and a nephew, Peter Ludlow.
-							</p>
-							<p class="quote">
-								 &quotI don't think you're giving us our due credit. Our scientists have done things which nobody's ever done before...&quot
-							 </p>
-						</section>
+							<section class="copy">
+							<h2>Dr. John Hammond</h2>
+								<p>Dr. John Alfred  Hammond, or John Parker Hammond (Trespasser canon), was the CEO and creator of Jurassic Park. He founded the company InGen and the Hammond Foundation. He had at least one daughter, two grandchildren (Tim and Lex Murphy), a sister (as Hammond's nephew has the surname of Ludlow, not Hammond) and a nephew, Peter Ludlow.
+								</p>
+								<p class="quote">
+									 &quotI don't think you're giving us our due credit. Our scientists have done things which nobody's ever done before...&quot
+								 </p>
+							</section>
 							<section class="image">
 								<img src="images/hammond.jpg" title="hammond" alt="hammond"/>
 							</section>
 						</article>
 					</div>
 
-					<div class="slide six about" id="muldoon">
+					<div class="slide-characters six about" id="muldoon">
 						<article class="person">
 						<section class="copy">
 							<h2>Robert Muldoon</h2>
@@ -139,7 +162,7 @@
 						</article>
 					</div>
 
-					<div class="slide seven about" id="tim">
+					<div class="slide-characters seven about" id="tim">
 						<article class="person">
 						<section class="copy">
 						<h2>Tim Murphy</h2>
@@ -156,7 +179,7 @@
 						</article>
 					</div>
 
-					<div class="slide eight about" id="lex">
+					<div class="slide-characters eight about" id="lex">
 						<article class="person">
 						<section class="copy">
 						<h2>Lex Murphy</h2>
@@ -172,7 +195,7 @@
 						</article>
 					</div>
 
-					<div class="slide nine about" id="arnold">
+					<div class="slide-characters nine about" id="arnold">
 						<article class="person">
 						<section class="copy">
 						<h2>Ray Arnold</h2>
@@ -188,7 +211,7 @@
 						</article>
 					</div>
 
-					<div class="slide ten about" id="nedry">
+					<div class="slide-characters ten about" id="nedry">
 						<article class="person">
 						<section class="copy">
 						<h2>Dennis Nedry</h2>

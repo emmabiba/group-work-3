@@ -15,13 +15,15 @@
 		<!-- Font for icons -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
 	</head>
 
-	<body>
+	<body class="overflow">
 
 		<div class="outer-wrapper">
   		<div class="wrapper">
@@ -31,23 +33,46 @@
 					<div class="flex-grid">
 
 						<header class="col sidebar" id="nav-home">
-							<nav>
-								<a href="index.html" onmouseenter="playAudio()">
-									<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home"/>
-									<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr"/>
-								</a>
-								<ul>
-									<li><a href="index.html" class="active">Dinosaur Paddocks</a></li>
-									<li><a href="characters.html">Movie Characters</a></li>
-									<li><a href="dinosaur-games.html">Dino Game</a></li>
-								</ul>
-							</nav>
+
+								<div class="desktop-menu">
+
+									<a href="index.html" onmouseenter="playAudio()">
+										<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home"/>
+									</a>
+
+									<nav>
+										<ul>
+											<a href="index.html" class="active"><li>Dinosaur Paddocks</li></a>
+											<a href="characters.html"><li>Movie Characters</li></a>
+											<a href="dinosaur-games.html"><li>Dino Game</li></a>
+										</ul>
+									</nav>
+
+								</div>
+
 						</header>
 
 					</div>
 
 					<!-- <div class="col main"> -->
 					<div class="s1content">
+
+						<a href="index.html" onmouseenter="playAudio()">
+							<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr"/>
+						</a>
+
+						<div class="mobile-menu">
+
+							<nav>
+								<ul>
+									<a href="index.html" class="active"><li>Dinosaur Paddocks</li></a>
+									<a href="characters.html"><li>Movie Characters</li></a>
+									<a href="dinosaur-games.html"><li>Dino Game</li></a>
+								</ul>
+							</nav>
+
+						</div>
+
 						<h1>Welcome to Jurassic&nbsp;Park</h1>
 						<div class="vertical-center" id="scroll-animation">
 							<p id="scroll">Scroll to drive through the Dinosaur&nbsp;Paddocks!</p><p><i class="material-icons" id="east">east</i></p>
@@ -63,7 +88,7 @@
 						<div class="dino-info">
 							<h2>About Jurassic&nbsp;Park</h2>
 							<p>Jurassic Park is a science fiction-adventure-drama film directed by Steven Spielberg, based upon the novel of the same name, written by Michael Crichton. The story involves scientists visiting a safari amusement park of genetically engineered dinosaurs on an island over one weekend. Sabotage sets the carnivorous dinosaurs on the loose, and the technicians and visitors attempt to escape the island.</p>
-							<p>Directions: Scroll through our arcade version of Jurassic Park to learn more about the dinosaurs that the movie features. Click on each dinosaur to take out your binoculars and get a closer look.</p>
+							<p>Directions: Scroll through our arcade version of Jurassic Park to learn more about the dinosaurs that the movie features.</p>
 						</div>
 					</div>
 
